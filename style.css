@@ -58,6 +58,7 @@ section {
 #about {
   display: block;
   width: 100%;
+  min-height: 100vh;
   text-align: center;
 }
 #about h1 {
@@ -223,8 +224,12 @@ img.gallery-active {
 }
 
 #location {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  min-height: 100vh;
   text-align: center;
 }
 #location h1 {
@@ -233,10 +238,11 @@ img.gallery-active {
 #location .map {
   width: 100%;
   display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  padding: 2rem;
+  grid-row: 1;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 1rem;
 }
+
 .map h3 {
   color: #fff;
   padding: 0 0 1rem 0;
@@ -256,11 +262,12 @@ img.gallery-active {
 .magacin,
 .kelebija,
 .subotica {
+  display: grid;
+  grid-template-rows: 2;
   padding: 1rem 0;
   height: 350px;
   border: 1px solid #fff;
 }
-
 footer {
   display: block;
   text-align: center;
@@ -322,6 +329,15 @@ footer {
     padding: 1rem 0;
   }
 
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    min-height: 420px;
+  }
+
   #about article {
     display: flex;
     justify-content: center;
@@ -380,6 +396,29 @@ footer {
     width: 100%;
     height: 300px;
   }
+
+  #mobile-expand {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile-btn {
+    height: 2rem;
+    background-color: rgb(255, 255, 255);
+    font-weight: 400;
+    width: 30%;
+    border-radius: 0.5rem;
+  }
+  .mobile-btn a {
+    text-decoration: none;
+    color: #333;
+  }
+  #loaction .map {
+    padding: 0;
+  }
 }
 
 @keyframes gradient {
@@ -391,5 +430,33 @@ footer {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  #logo {
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    width: 100%;
+  }
+  .nav-links li {
+    padding: 2rem;
+  }
+  #about {
+    min-height: 400px;
+  }
+  .gallery-preview {
+    gap: 10px;
+  }
+}
+@media (min-width: 932px) and (max-width: 1231px) {
+  #location .map {
+    width: 100%;
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    padding: 1rem;
   }
 }

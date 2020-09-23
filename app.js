@@ -22,4 +22,14 @@ function imageGallery() {
     });
   });
 }
+
+buttonFunction = () => {
+  var x = document.getElementById("mobile-expand");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+};
+
 imageGallery();
