@@ -24,9 +24,13 @@ function imageGallery() {
 }
 
 buttonFunction = () => {
-  var x = document.getElementById("mobile-expand");
+  const x = document.getElementById("mobile-expand");
   if (x.style.display === "none") {
     x.style.display = "flex";
+    x.style.flexDirection = "column";
+    x.style.gap = "1rem";
+    x.style.justifyContent = "center";
+    x.style.alignItems = "center";
   } else {
     x.style.display = "none";
   }
