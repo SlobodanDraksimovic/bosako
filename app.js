@@ -26,6 +26,10 @@ function imageGallery() {
 }
 
 buttonFunction = () => {
+<<<<<<< HEAD
+=======
+  const x = document.getElementById("mobile-expand");
+>>>>>>> 480c6bc920d3be853985d0548963e2a3c2276c4b
   if (x.style.display === "none") {
     x.style.display = "flex";
     x.style.flexDirection = "column";
@@ -37,6 +41,7 @@ buttonFunction = () => {
   }
 };
 
+<<<<<<< HEAD
 Array.from(image).forEach((image) => {
   image.addEventListener("load", () => fitImage(image));
 
@@ -64,4 +69,6 @@ function fitImage(image) {
   }
 }
 
+=======
+>>>>>>> 480c6bc920d3be853985d0548963e2a3c2276c4b
 imageGallery();

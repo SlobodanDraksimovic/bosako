@@ -238,7 +238,11 @@ img.gallery-active {
   width: 100%;
   display: grid;
   grid-row: 1;
+<<<<<<< HEAD
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+=======
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+>>>>>>> 480c6bc920d3be853985d0548963e2a3c2276c4b
   padding: 1rem;
 }
 
