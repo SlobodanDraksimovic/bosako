@@ -157,14 +157,13 @@ h1 {
 
 .gallery-highlight {
   width: 80%;
-  max-height: 600px;
   padding: 1rem 0 0 0;
 }
 
 .gallery-preview {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 2px;
   align-items: center;
   width: 100%;
   padding: 2rem;
@@ -356,7 +355,7 @@ footer {
 
   .logo {
     width: 80%;
-    top: 60%;
+    top: 75%;
   }
   .intro {
     height: 85vh;
@@ -398,12 +397,7 @@ footer {
   }
 
   #mobile-expand {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    display: none;
   }
   .mobile-btn {
     height: 2rem;
